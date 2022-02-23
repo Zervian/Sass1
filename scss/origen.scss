@@ -1,0 +1,135 @@
+// este es un comentario de linea en Sass solo para sas
+
+/* comentario de bloque que aparece tambien en css */
+
+
+
+
+
+// import 
+
+@import "clasesids";
+@import "fuentes";
+@import "mediasq";
+@import "estructuras";
+@import "reseteos";
+
+
+// variables
+
+
+$bordes: rgb(255, 92, 88);
+
+
+
+header { 
+    font-family: "zaha";
+    width: 100%;
+    background-color: white;
+    border-bottom: ridge 2px $bordes ;
+    position: sticky;
+    padding-bottom: 5px;
+    top: 0px;
+
+            a:hover{
+             color: salmon;
+            }
+   
+}
+
+
+
+
+nav{
+    height: 100%;  
+}
+
+
+
+
+main {
+    font-family: "zaha";
+    font-size: 15px;
+
+}
+
+
+a{
+    color: black;
+    text-decoration: none;
+
+}
+
+
+footer {
+    font-family: "zaha";
+    font-size: 15px;
+    background-color: #BB6464  ;
+    border-top: ridge 2px $bordes;
+    height: 60px;
+    padding-top: 10px;
+    
+    
+}
+
+
+h2 {
+
+    font-family: "cuerpo";
+    font-size: 25px;
+    
+}
+
+
+p {
+    font-style: italic;    
+          /* Todos los parrafos son descriptivos */
+ 
+       
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+hr {
+    margin: 0% 20%;
+    justify-items: center;
+}
+
+section p {
+    margin: 0% 20px;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+
+
+/* animaciones  */
+
+
+
+.headerAnime {
+    animation-name: encabezado;
+    animation-iteration-count: 1 ;
+    animation-duration: 4s;
+    
+}
+
+@keyframes encabezado {
+    from{        
+          transform: translatey(-200px); 
+          opacity: 0;          
+        }
+
+    to{
+        transform: translate(0px); 
+        opacity: 1;                
+    }
+}
